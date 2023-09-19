@@ -35,6 +35,7 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
+    </dependency>
       <dependency>
           <groupId>com.github.jsimone</groupId>
           <artifactId>webapp-runner</artifactId>

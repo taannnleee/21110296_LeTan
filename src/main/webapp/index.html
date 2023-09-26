@@ -2,12 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-    <h1>Hồ sơ của tôi</h1>
-    <h2>Họ và tên: Lê Tân</h2>
-    <h2>Mã số sinh viên: 21110296</h2>
-    <a href="https://tan-ltweb.onrender.com/home/">Bài tập tuần 4</a>
+<main>
+
+    <ul>
+        <header>
+            <img src="views/img/logo.jpg">
+            <h1>Lê Tân</h1>
+        </header>
+        <li>
+            <a href="https://github.com/taannnleee"> <img src="views/img/github.jpg" style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+            >GitHub</a>
+        </li>
+
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100011319489082"><img src="views/img/facebook.png"
+                                                                                   style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+
+            >Facebook</a>
+        </li>
+
+        <li>
+            <a href="https://www.youtube.com/channel/UC9B466juaDITcADqItJWOXw"><img src="views/img/youtube.png"
+                                                                                    style="
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;"
+
+            >Youtube</a>
+        </li>
+    </ul>
+</main>
+<p>Thông tin chi tiết liên hệ: 0776506179</p>
+
+
+<ul class="listOfEx">
+    <li>
+        <a href="javascript:void(0);" onclick="toggleFolder('folderA');">Danh sách bài tập các tuần</a>
+        <ul id="folderA" style="display: none;">
+            <li>
+                <a href="https://tan-ltweb.onrender.com/home/"><img src="views/img/ex.jpg"
+                                                                    style="
+			width: 30px;
+			height: 30px;
+			padding-bottom: 10px;"
+
+                >Week4</a>
+            </li>
+
+            <li>
+                <a href="#"><img src="views/img/ex.jpg"
+                                 style="
+			width: 30px;
+			height: 30px;
+			padding-bottom: 10px;"
+
+                >Week5</a>
+            </li>
+
+            <li>
+                <a href="#"><img src="views/img/ex.jpg"
+                                 style="
+			width: 30px;
+			height: 30px;
+			padding-bottom: 10px;"
+
+                >Week6</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<div class="cuoi">
+    @2023 Copyright LTan.com
+</div>
+
+<script>
+    function toggleFolder(folderId) {
+        var folder = document.getElementById(folderId);
+        if (folder.style.display === 'none') {
+            folder.style.display = 'block';
+        } else {
+            folder.style.display = 'none';
+        }
+    }
+</script>
 </body>
 </html>

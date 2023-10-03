@@ -7,94 +7,73 @@
 </head>
 <body>
 <main>
+    <header>
+        <img src="views/img/logo.jpg">
+        <h1>Lê Tân</h1>
+    </header>
 
     <ul>
-        <header>
-            <img src="views/img/logo.jpg">
-            <h1>Lê Tân</h1>
-        </header>
         <li>
-            <a href="https://github.com/taannnleee"> <img src="views/img/github.jpg" style="
-    width: 30px;
-    height: 30px;
-    padding-bottom: 10px;"
-            >GitHub</a>
+            <a href="https://github.com/taannnleee">
+                <img src="views/img/github.jpg" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                GitHub
+            </a>
         </li>
-
         <li>
-            <a href="https://www.facebook.com/profile.php?id=100011319489082"><img src="views/img/facebook.png"
-                                                                                   style="
-    width: 30px;
-    height: 30px;
-    padding-bottom: 10px;"
-
-            >Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=100011319489082">
+                <img src="views/img/facebook.png" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                Facebook
+            </a>
         </li>
-
         <li>
-            <a href="https://www.youtube.com/channel/UC9B466juaDITcADqItJWOXw"><img src="views/img/youtube.png"
-                                                                                    style="
-    width: 30px;
-    height: 30px;
-    padding-bottom: 10px;"
-
-            >Youtube</a>
+            <a href="https://www.youtube.com/channel/UC9B466juaDITcADqItJWOXw">
+                <img src="views/img/youtube.png" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                Youtube
+            </a>
         </li>
     </ul>
-</main>
-<p>Thông tin chi tiết liên hệ: 0776506179</p>
 
+    <p>Thông tin chi tiết liên hệ: 0776506179</p>
 
-<ul class="listOfEx">
-    <li>
-        <a href="javascript:void(0);" onclick="toggleFolder('folderA');">Danh sách bài tập các tuần</a>
-        <ul id="folderA" style="display: none;">
-            <li>
-                <a href="https://tan-ltweb.onrender.com/home/"><img src="views/img/ex.jpg"
-                                                                    style="
-			width: 30px;
-			height: 30px;
-			padding-bottom: 10px;"
+    <ul class="listOfEx">
+        <li>
+            <a href="javascript:void(0);" onclick="toggleFolder('folderA');">Danh sách bài tập các tuần</a>
+            <ul id="folderA" style="display: none;">
+                <li>
+                    <a href="https://letan-ltweb.onrender.com/home/">
+                        <img src="views/img/ex.jpg" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                        Week4
+                    </a>
+                </li>
+                <li>
+                    <a href="https://letan-ltweb-w5.onrender.com/home/">
+                        <img src="views/img/ex.jpg" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                        Week5.1
+                    </a>
+                </li>
+                <li>
+                    <a href="https://letan-ltweb-w5-5-2.onrender.com/home/">
+                        <img src="views/img/ex.jpg" style="width: 30px; height: 30px; padding-bottom: 10px;">
+                        Week5.2
+                    </a>
+            </ul>
+        </li>
+    </ul>
 
-                >Week4</a>
-            </li>
+    <div class="cuoi">
+        @2023 Copyright LTan.com
+    </div>
 
-            <li>
-                <a href="#"><img src="views/img/ex.jpg"
-                                 style="
-			width: 30px;
-			height: 30px;
-			padding-bottom: 10px;"
-
-                >Week5</a>
-            </li>
-
-            <li>
-                <a href="#"><img src="views/img/ex.jpg"
-                                 style="
-			width: 30px;
-			height: 30px;
-			padding-bottom: 10px;"
-
-                >Week6</a>
-            </li>
-        </ul>
-    </li>
-</ul>
-
-<div class="cuoi">
-    @2023 Copyright LTan.com
-</div>
-
-<script>
-    function toggleFolder(folderId) {
-        var folder = document.getElementById(folderId);
-        if (folder.style.display === 'none') {
-            folder.style.display = 'block';
-        } else {
-            folder.style.display = 'none';
+    <script>
+        function toggleFolder(folderId) {
+            var folder = document.getElementById(folderId);
+            if (folder.style.display === 'none' || folder.style.display === '') {
+                folder.style.display = 'block';
+            } else {
+                folder.style.display = 'none';
+            }
         }
-    }
-</script>
+    </script>
+</main>
 </body>
 </html>
